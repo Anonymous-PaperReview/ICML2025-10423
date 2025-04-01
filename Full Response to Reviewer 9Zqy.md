@@ -12,7 +12,7 @@ does not strictly hold. Our intended statement was one of approximation rather t
 
 $$\Delta W = A^* B^* \approx A_0 B'^*.$$
 
-To address this, we have enhanced our theoretical analysis to explicitly quantify the approximation error. Specifically, we now provide an analysis titled **"Calculating the Expected Value of $\| A^* - A_0 C^* \|_F^2$ When $A^*$ and $A_0$ Have Entries Drawn from $N(0,1)$"**. Please refer to reference [Proof of Theorem 2.1.pdf] for detailed derivations and discussions.
+To address this, we have enhanced our theoretical analysis to explicitly quantify the approximation error. Specifically, we now provide an analysis to calculate the Expected Value of $\| A^* - A_0 C^* \|_F^2$ When $A^*$ and $A_0$ are under $N(0,1)$ distribution. Please refer to reference [Proof of Theorem 2.1.pdf] for detailed derivations and discussions.
 
 We would like to take this opportunity to further elaborate on LoRA-FA’s theoretical foundations and practical implications. Initially, LoRA-FA was conceived as a predominantly empirical exploration shortly after the introduction of LoRA. We observed a notable asymmetry between matrices A and B; intuitively, matrix A acts primarily as a transmitter, whereas B serves as a feature extractor—analogous, in our view, to how attention mechanisms interact with MLP layers in transformer models. Motivated by this observation, we conducted extensive experiments validating that training matrix B alone could achieve competitive performance compared to standard LoRA (though not fully matching LoRA), with significant memory savings for activations.
 
